@@ -1,0 +1,25 @@
+{
+    "name": "midl-webidl-syntax",
+    "displayName": "Microsoft MIDL and Mozilla WebIDL syntax highlighting",
+    "description": "Syntax highlighting for Microsoft MIDL style IDL files and Mozilla WebIDL style IDL files. Ported from https://github.com/andik/IDL-Syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "idl",
+            "aliases": ["IDL", "idl"],
+            "extensions": [".idl",".webidl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "idl",
+            "scopeName": "source.webidl",
+            "path": "./syntaxes/webidl.tmLanguage"
+        }]
+    }
+}
